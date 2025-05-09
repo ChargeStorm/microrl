@@ -544,7 +544,7 @@ void new_line_handler(microrl_t * pThis){
 #endif
 	status = split (pThis, pThis->cmdlen, tkn_arr);
 	if (status == -1){
-		//          pThis->print ("ERROR: Max token amount exseed\n");
+		//          pThis->print ("ERROR: Max token amount exceeded\n");
 		pThis->print ("ERROR:too many tokens");
 		pThis->print (ENDL);
 	}
